@@ -23,9 +23,17 @@ code {
 }
 
 .input-group > .input-group-prepend {
-  flex: 0 0 15%;
+  flex: 0 0 20vh;
 }
 
 .input-group .input-group-text {
   width: 100%;
+  min-width: 70%;
+  text-align: right;
+}
+
+@media only screen and (max-width: 800px) {
+  .input-group > .form-control {
+    flex-basis: 100%;
+  }
 }
